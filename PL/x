@@ -1,0 +1,22 @@
+
+# add target Map:Location
+sub showTargetAddress
+{ undef $targetaddress;
+  my ($dum,$dum1,$targetaddress)=split(/:/,$UserAction,3);
+  if($targetaddress)
+  { my $address=&ParcelvAddress($targetaddress);
+    my ($markerX,$markerY,$MapDimX,$MapDimY) =
+     &Address2Pixel($address,$MapParameters);
+    next if($markerX !~ /\d/);
+    if( $markerX<0 or $markerY<0 or $markerX>$MapDimX or $markerY>$MapDimY)
+    my $markerY=$MapYOffset+$Yoffset;
+
+     print <<___EOR;
+<circle cx="740" cy="60" r="10" stroke="black" stroke-width="1" fill="orange" opacity="1."/>
+<text x="760" y="70" font-size="$MarkerSize"> $targetaddress </text>
+
+<circle id="$targetaddress" cx="$markerX" cy="$markerY" 
+r="$MarkerSize" stroke="black" stroke-width="1" fill="orange" opacity="1."/>
+___EOR
+   }
+}

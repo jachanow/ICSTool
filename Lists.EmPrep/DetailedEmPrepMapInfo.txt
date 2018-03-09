@@ -1,0 +1,5 @@
+# information file for map images
+#MapFile=Maps/parcelMap1.jpg
+MapFile=Maps/11x17map.jan2017.jpg
+MapXdim=1700px
+MapYdim=2550px

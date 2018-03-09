@@ -1,0 +1,36 @@
+cmoore@herbert.com... Connecting to gmail-smtp-msa.l.google.com. via relay...
+220 smtp.gmail.com ESMTP d184sm5465258ite.4 - gsmtp
+>>> EHLO icstool.tupl.us
+250-smtp.gmail.com at your service, [2602:306:3793:95d0::30]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+>>> STARTTLS
+220 2.0.0 Ready to start TLS
+>>> EHLO icstool.tupl.us
+250-smtp.gmail.com at your service, [2602:306:3793:95d0::30]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+>>> AUTH PLAIN bm9ydGhzaWRlLmVtcHJlcEBnbWFpbC5jb20Abm9ydGhzaWRlLmVtcHJlcEBnbWFpbC5jb20ARW1QcmVwVXNlcjEwMQ==
+235 2.7.0 Accepted
+>>> MAIL From:<northside.emprep@gmail.com> SIZE=2190
+250 2.1.0 OK d184sm5465258ite.4 - gsmtp
+>>> RCPT To:<cmoore@herbert.com>
+>>> DATA
+250 2.1.5 OK d184sm5465258ite.4 - gsmtp
+354  Go ahead d184sm5465258ite.4 - gsmtp
+>>> .
+250 2.0.0 OK 1519927809 d184sm5465258ite.4 - gsmtp
+cmoore@herbert.com... Sent (OK 1519927809 d184sm5465258ite.4 - gsmtp)
+Closing connection to gmail-smtp-msa.l.google.com.
+>>> QUIT
+221 2.0.0 closing connection d184sm5465258ite.4 - gsmtp

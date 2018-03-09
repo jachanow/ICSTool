@@ -1,0 +1,15 @@
+<rect x="20" y="15" width="24" height="24" stroke="black" fill="magenta"  />
+<text x="60" y="35" font-size="24">Fire Related Issues</text>
+
+<rect x="20" y="55" width="24" height="24" stroke="black" fill="blue" />
+<text x="60" y="75" font-size="24">Hazards</text>
+
+<rect x="280" y="15" width="24" height="24" stroke="black" fill="red" />
+<text x="320" y="35" font-size="24">People Related Issues</text>
+
+<rect x="280" y="55" width="24" height="24" stroke="black" fill="green" />
+<text x="320" y="75" font-size="24">Structural Issues</text>
+
+<circle cx="580" cy="25" r="10" fill="cyan" stroke="black"/>
+<text x="600" y="35" font-size="24">All Clear</text>
+

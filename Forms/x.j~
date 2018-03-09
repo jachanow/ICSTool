@@ -1,0 +1,7 @@
+#!/usr/bin/perl
+
+unlink "*.dvi";
+unlink "x.ps";
+system "latex DamageAssessmentForm.tex";
+system "dvips -o x.ps  DamageAssessmentForm.dvi";
+

@@ -1,0 +1,18 @@
+Steps to update DBMaster.db from Google form and to send UpdateRequest's
+
+1. Edit EmPrep Member Information v.2017.3.4 (Responses) 
+https://docs.google.com/spreadsheets/d/1J8V22Xp5q1CpjYVh21eMA6XskYsFQdD4Yi6CbzZnGNE/edit#gid=163063361
+
+2. Download .csv file to icstool:~tom/Sites/EMPREP/ICSTool/PL/DB/MasterDB.csv.<date>
+
+3. Edit csvFix.j to reflect proper date of the .csv file
+
+# 3. Run csvFix.j (edit the date reference for the .csv file)
+# 4. Run MasterDB.csv2db.pl
+
+3-4. Run makeDBfiles.j (includes csvFix.j and MasterDB.csv2db.pl)
+
+5. Run UpdateRequest.j (uncomment for TEST first)
+
+6. Run UpdateRequest.j (for all)
+
